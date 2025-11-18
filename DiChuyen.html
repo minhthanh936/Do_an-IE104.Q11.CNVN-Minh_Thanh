@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="TrangChu.html">DU LỊCH CÀ MAU</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="TrangChu.html">Trang chủ</a></li>
+                <li><a href="DiaDiem.html">Địa điểm</a></li>
+                <li><a href="DichVu.html">Dịch vụ</a></li>
+                <li><a href="BaiBao.html">Bài báo</a></li>
+                <li><a class="active" href="DiChuyen.html">Di chuyển</a></li>
+                <li><a href="BanDo.html">Bản đồ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="d1">Xe khách</button>
+            <button class="tab-button" data-tab="d2">Máy bay</button>
+            <button class="tab-button" data-tab="d3">Đường</button>
+        </div>
+
+        <!-- Tab Content Containers -->
+        <div id="d1" class="LonAd content-section active">
+            <h2>Xe khách Tuấn Hưng</h2>
+            <p>Tuấn Hưng có quy mô xe lớn, có hệ thống dòng xe limousine đời mới, hiện đại trên tuyến. Đem lại sự sang trọng và đầy đủ tiện ích như ghế nằm, nước uống, máy lạnh...</p>
+            <p><strong>Chạy tuyến:</strong> Năm Căn - Cái Nước - Phú Tân - Cà Mau - Bạc Liêu - Cần Thơ - Sài Gòn </p>
+            <p><strong>TP.HCM:</strong> (028)39636363</p>
+            <p><strong>Cà Mau:</strong> (0290)3667788</p>
+            <a href="https://xekhachtuanhung.com/" target="_blank" class="cta-button">Tìm hiểu ngay</a>
+            <h2>Xe Hảo</h2>
+            <p>Xe khách Hảo - Xe Hảo dịch vụ vận chuyển hành khách , hàng hoá từ: TP.HỒ CHÍ MINH - BẠC LIÊU. TP.HỒ CHÍ MINH - CÀ MAU.</p>
+            <p><strong>Chạy tuyến:</strong> TP.HỒ CHÍ MINH - BẠC LIÊU, TP.HỒ CHÍ MINH - CÀ MAU </p>
+            <p><strong>SĐT:</strong> (Trước kia đi mà quên chưa ghi SĐT)</p>
+            <a href="https://xekhachhao.com/" target="_blank" class="cta-button">Tìm hiểu ngay</a>
+        </div>
+
+        <div id="d2" class="LonAd content-section">
+            <h2>Vietnam Airlines</h2>
+            <p><strong>Thành phố Hồ Chí Minh - Cà Mau (Bay thẳng):</strong> Khoảng 1 tiếng 10 phút, 1 chuyến/ngày.</p>
+            <p> Vào thời điểm hiện tại, vé máy bay đi Cà Mau đi đang được mở bán ở mức từ 1.206.000 VND/chiều (tùy thuộc vào điểm khởi hành), đã bao gồm thuế phí.</p>
+            <a href="https://www.vietnamairlines.com/vi-vn/v%C3%A9-m%C3%A1y-bay-%C4%91%E1%BA%BFn-c%C3%A0-mau" target="_blank" class="cta-button">Tìm hiểu ngay</a>
+        </div>
+
+        <div id="d3" class="LonAd content-section">
+            <h2>(Cái phần này hết ý tưởng rồi)</h2>
+            <a href="BanDo.html" target="_blank" class="cta-button">Nhấn</a>
+        </div>
+
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.LonAd');
+            // Doi tab
+            function switchTab(targetTabId) {
+                tabButtons.forEach(button => {
+                    button.classList.remove('active');
+                });
+                tabContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+                const activeTabButton = document.querySelector(`.tab-button[data-tab="${targetTabId}"]`);
+                if (activeTabButton) {
+                    activeTabButton.classList.add('active');
+                }
+                const activeTabContent = document.getElementById(targetTabId);
+                if (activeTabContent) {
+                    activeTabContent.classList.add('active');
+                }
+            }
+            // Nut
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetTabId = button.getAttribute('data-tab');
+                    switchTab(targetTabId);
+                });
+            });
+        });
+    </script>
+<footer>
+    <p>Địa chỉ: ?? Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
+    <p>Số điện thoại: (Cứ tưởng tượng đây là Số điện thoại)</p>
+    <p>&copy; ???/???/???</p>
+    <a href="https://www.camau.gov.vn">Tham khảo từ</a>
+</footer>
+</body>
+</html>

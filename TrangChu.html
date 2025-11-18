@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="TrangChu.html">DU LỊCH CÀ MAU</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="active" href="TrangChu.html">Trang chủ</a></li>
+                <li><a href="DiaDiem.html">Địa điểm</a></li>
+                <li><a href="DichVu.html">Dịch vụ</a></li>
+                <li><a href="BaiBao.html">Bài báo</a></li>
+                <li><a href="DiChuyen.html">Di chuyển</a></li>
+                <li><a href="BanDo.html">Bản đồ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="LonAd active">
+            <h1>Cà Mau - Tỉnh Cực Nam của Tổ Quốc</h1>
+            <p>Khám phá vùng đất cực nam của Việt Nam, nơi những cánh rừng đước bạt ngàn gặp gỡ biển cả, hệ sinh thái rừng ngập mặn độc đáo và nền văn hóa đặc sắc đậm chất miền nam.</p>
+            <a href="DiaDiem.html" class="cta-button">Khám Phá Ngay</a>
+        </section>
+
+        <div class="slideshow-container">
+        <!-- Slide JavaScript -->
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-0">
+                <img src="images/1000000000000258000001C279F27EDD.jpg" class="slide-image" alt="Chợ nổi Cà Mau">
+                <div class="slide-text">Chợ nổi Cà Mau</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-1">
+                <img src="images/100000000000028C0000017572CE8E2A.jpg" class="slide-image" alt="Hòn Đá Bạc">
+                <div class="slide-text">Hòn Đá Bạc</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/10000000000003E80000029B0BE91EDD.jpg" class="slide-image" alt="Đầm Thị Tường">
+                <div class="slide-text">Đầm Thị Tường</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/10000000000002800000017ED4C676EA.jpg" class="slide-image" alt="Rừng ngập mặn Cà Mau">
+                <div class="slide-text">Rừng ngập mặn Cà Mau</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/10000000000004000000028A8BFA609D.jpg" class="slide-image" alt="Mũi Cà Mau">
+                <div class="slide-text">Mũi Cà Mau</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/1000000000000543000002AEA3E5F777.jpg" class="slide-image" alt="Đảo Hòn Khoai Cà Mau">
+                <div class="slide-text">Đảo Hòn Khoai Cà Mau</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/10000000000002BC000001D5EE5A9E3C.jpg" class="slide-image" alt="Khu du lịch biển Khai Long">
+                <div class="slide-text">Khu du lịch biển Khai Long</div>
+            </a>
+        </div>
+
+        <div class="slide fade">
+            <a href="NoiGiaSu.html" target="_blank" class="slide-link" id="slide-link-2">
+                <img src="images/10000000000004920000030DE1F06D25.jpg" class="slide-image" alt="Rừng quốc gia U Minh Hạ">
+                <div class="slide-text">Rừng quốc gia U Minh Hạ</div>
+            </a>
+        </div>
+
+        <!-- Nut dich chuyen -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!--<iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/c37vNwFR8ww?si=-fqyr6ksuTJjwhpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
+    </main>
+
+    <script>
+        let slideIndex = 0;
+        let slides;
+        window.onload = function() {
+            // Get all slide elements
+            slides = document.getElementsByClassName("slide");
+            if (slides.length > 0) {
+                showSlides(slideIndex);
+                startAutoSlideshow();
+            }
+        };
+        // Auto slideshow timer
+        let slideshowTimer;
+
+        function startAutoSlideshow() {
+            // Clear timer
+            clearInterval(slideshowTimer);
+            // Set timer 5000ms
+            slideshowTimer = setInterval(function() {
+                plusSlides(1);
+            }, 5000);
+        }
+        // Tien va Lui slideshow
+        function plusSlides(n) {
+            let newIndex = slideIndex + n;
+            // Vong nguoc lai
+            if (newIndex >= slides.length) {
+                newIndex = 0;
+            } else if (newIndex < 0) {
+                newIndex = slides.length - 1;
+            }
+            showSlides(newIndex);
+            // Chay lai auto
+            startAutoSlideshow();
+        }
+        function showSlides(n) {
+            slideIndex = n;
+            if (!slides || slides.length === 0) return;
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+            slides[slideIndex].classList.add('active');
+        }
+    </script>
+<footer>
+    <p>Địa chỉ: ?? Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
+    <p>Số điện thoại: (Cứ tưởng tượng đây là Số điện thoại)</p>
+    <p>&copy; ???/???/???</p>
+    <a href="https://www.camau.gov.vn">Tham khảo từ</a>
+</footer>
+</body>
+</html>

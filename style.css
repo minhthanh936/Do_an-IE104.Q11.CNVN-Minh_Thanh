@@ -1,0 +1,578 @@
+/* Mau! */
+:root {
+  --primary-color: #6dd0f6; // Mau tu logo - nuoc bien
+  --secondary-color: #00a84f; // Mau tu logo - xanh la
+  --text-light: #f4f4f4;
+  --text-dark: #333;
+  --bg-light: #ffffff;
+  --bg-dark: #f0f0f0;
+  --the-red: #ff0001;
+  --donlam: #ff4500;
+}
+/* Fonts and Size and things */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('font/Ubuntu-Bold.ttf') format('ttf'),
+       url('font/Ubuntu-Italic.ttf') format('ttf'),
+       url('font/Ubuntu-Regular.ttf') format('ttf'),
+       url('font/Ubuntu-Light.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSerif';
+  src: url('font/PTSerif-Bold.ttf') format('ttf'),
+       url('font/PTSerif-Italic.ttf') format('ttf'),
+       url('font/PTSerif-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3 {
+  font-family: 'PTSerif', serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    background: url(images/Muicamau.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* Header, Navigation */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .active {
+    background-color: var(--the-red);
+    //border: 1px solid #ddd;
+    //padding: 30px;
+    //margin-bottom: 30px;
+    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    //border-left: 5px solid #00a84f; // Mau tu logo - xanh la
+}
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #005800;
+}
+/*
+nav li a:active {
+  color: white;
+  background: #003300;
+}
+*/
+.LonAd {
+    color: var(--text-light);
+    text-align: center;
+    padding: 100px 5%;
+    //height: 50vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.LonAd::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+}
+
+.LonAd * {
+    z-index: 2;
+}
+
+.LonAd h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.LonAd p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.LonAd {
+    display: none;
+    padding: 1rem 0;
+    animation: fadeIn 0.5s;
+}
+
+.LonAd.active {
+    //display: block;
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-section p {
+    margin-bottom: 1rem;
+}
+
+.content-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 12px 30px;
+    text-decoration: underline;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px var(--secondary-color), 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.cta-button:hover {
+    background-color: var(--the-red);
+    transform: translateY(-2px);
+}
+
+/* Main Layout */
+main {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Cac bai bao */
+.main-article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid var(--donlam);
+}
+
+.main-article h2 {
+    color: var(--donlam);
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #1a237e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+.article-list h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+.article-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-item h3 {
+    margin-top: 0;
+    color: var(--text-dark);
+    font-size: 1.3em;
+}
+
+.article-item .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.article-item a {
+    color: var(--primary-color); // Co the can nhat hon
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-item a:hover {
+    text-decoration: underline;
+}
+
+.article-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.article-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article-place h1 {
+    margin-top: 0;
+    color: var(--the-red);
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.article-place .meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.article-place a {
+    color: var(--primary-color); // Co the can nhat hon
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-place {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+/* Containers, Cards */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--text-light);
+}
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--bg-dark);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+/* Footer */
+/*footer {
+    background-color: var(--text-dark);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 0.9em;
+}*/
+
+.map {
+    width: 1024px;
+    height: 741px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+.white-text {
+  color: #fff;
+}
+.bai-tho {
+    text-align: center;
+}
+.youtube-video {
+    width: 560px;
+    height: 315px;
+}
+/* --- Footer --- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 5%;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.slide {
+    display: none;
+    animation: fadeIn 1s;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide-link {
+    display: block;
+    text-decoration: none; // Bo link underline
+    color: inherit;
+}
+
+.slide-image {
+    width: 100%;
+    //height: auto;
+    height: 741px;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 16 / 9; // 16/9
+}
+
+.slide-text {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+/* Slideshow Nut Bam */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Tabs */
+.tabs {
+    display: flex;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tab-button {
+    flex-grow: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    position: relative;
+    text-align: center;
+}
+
+.tab-button:hover:not(.active) {
+    color: var(--secondary-color);
+    background-color: #f3f4f6;
+}
+
+.tab-button.active {
+    color: var(--the-red);
+}
+
+.tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px 2px 0 0;
+}
+
+/* Thu Nho */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 8px;
+        background-color: rgba(109, 208, 246, 0.1);
+    }
+
+    .hero {
+        height: 40vh;
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .attraction-grid {
+        grid-template-columns: 1fr;
+    }
+    .map {
+        width: 425px;
+        height: 350px;
+    }
+    .slide-image {
+        width: 100%;
+        //height: auto;
+        height: 350px;
+        display: block;
+        object-fit: cover;
+        aspect-ratio: 16 / 9;
+    }
+    .tabs {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .tab-button {
+        flex-shrink: 0;
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+    .youtube-video {
+    width: 560px;
+    height: 315px;
+    }
+}
