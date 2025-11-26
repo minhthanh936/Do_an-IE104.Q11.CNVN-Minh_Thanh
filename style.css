@@ -100,7 +100,7 @@ nav li a:active {
 }
 */
 .LonAd {
-    color: var(--text-light);
+    color: var(--text-dark);
     text-align: center;
     padding: 100px 5%;
     /* height: 50vh; */
