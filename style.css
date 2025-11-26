@@ -12,19 +12,19 @@
 /* Fonts and Size and things */
 @font-face {
   font-family: 'Ubuntu';
-  src: url('font/Ubuntu-Bold.ttf') format('ttf'),
-       url('font/Ubuntu-Italic.ttf') format('ttf'),
-       url('font/Ubuntu-Regular.ttf') format('ttf'),
-       url('font/Ubuntu-Light.ttf') format('ttf');
+  src: url('fonts/Ubuntu-Bold.ttf') format('ttf'),
+       url('fonts/Ubuntu-Italic.ttf') format('ttf'),
+       url('fonts/Ubuntu-Regular.ttf') format('ttf'),
+       url('fonts/Ubuntu-Light.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSerif';
-  src: url('font/PTSerif-Bold.ttf') format('ttf'),
-       url('font/PTSerif-Italic.ttf') format('ttf'),
-       url('font/PTSerif-Regular.ttf') format('ttf');
+  src: url('fonts/PTSerif-Bold.ttf') format('ttf'),
+       url('fonts/PTSerif-Italic.ttf') format('ttf'),
+       url('fonts/PTSerif-Regular.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 }
