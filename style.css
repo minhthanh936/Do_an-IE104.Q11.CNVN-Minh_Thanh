@@ -1,13 +1,13 @@
 /* Mau! */
 :root {
-  --primary-color: #6dd0f6; // Mau tu logo - nuoc bien
-  --secondary-color: #00a84f; // Mau tu logo - xanh la
-  --text-light: #f4f4f4;
-  --text-dark: #333;
-  --bg-light: #ffffff;
-  --bg-dark: #f0f0f0;
-  --the-red: #ff0001;
-  --donlam: #ff4500;
+    --primary-color: #6dd0f6; /* Mau tu logo - nuoc bien */
+    --secondary-color: #00a84f; /* Mau tu logo - xanh la */
+    --text-light: #f4f4f4;
+    --text-dark: #333;
+    --bg-light: #ffffff;
+    --bg-dark: #f0f0f0;
+    --the-red: #ff0001;
+    --donlam: #ff4500;
 }
 /* Fonts and Size and things */
 @font-face {
@@ -83,11 +83,11 @@ header {
 
 nav .active {
     background-color: var(--the-red);
-    //border: 1px solid #ddd;
-    //padding: 30px;
-    //margin-bottom: 30px;
-    //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    //border-left: 5px solid #00a84f; // Mau tu logo - xanh la
+    /*border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #00a84f; /* Mau tu logo - xanh la */
 }
 nav li a:focus, nav li a:hover {
   color: white;
@@ -103,7 +103,7 @@ nav li a:active {
     color: var(--text-light);
     text-align: center;
     padding: 100px 5%;
-    //height: 50vh;
+    /* height: 50vh; */
     height: auto;
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@ nav li a:active {
 }
 
 .LonAd.active {
-    //display: block;
+    /* display: block; */
     display: flex;
 }
 
@@ -252,7 +252,7 @@ main {
 }
 
 .article-item a {
-    color: var(--primary-color); // Co the can nhat hon
+    color: var(--primary-color); /* Co the can nhat hon */
     text-decoration: none;
     font-weight: bold;
 }
@@ -290,7 +290,7 @@ main {
 }
 
 .article-place a {
-    color: var(--primary-color); // Co the can nhat hon
+    color: var(--primary-color); /* Co the can nhat hon */
     text-decoration: none;
     font-weight: bold;
 }
@@ -423,17 +423,17 @@ footer p {
 
 .slide-link {
     display: block;
-    text-decoration: none; // Bo link underline
+    text-decoration: none; /* Bo link underline */
     color: inherit;
 }
 
 .slide-image {
     width: 100%;
-    //height: auto;
+    /* height: auto; */
     height: 741px;
     display: block;
     object-fit: cover;
-    aspect-ratio: 16 / 9; // 16/9
+    aspect-ratio: 16 / 9; /* 16/9 */
 }
 
 .slide-text {
@@ -562,7 +562,7 @@ footer p {
     }
     .slide-image {
         width: 100%;
-        //height: auto;
+        /* height: auto; */
         height: 350px;
         display: block;
         object-fit: cover;
