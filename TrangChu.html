@@ -95,50 +95,8 @@
         <!--<iframe class="youtube-video" src="https://www.youtube-nocookie.com/embed/c37vNwFR8ww?si=-fqyr6ksuTJjwhpW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>-->
     </main>
 
-    <script>
-        let slideIndex = 0;
-        let slides;
-        window.onload = function() {
-        // Get all slide elements
-        slides = document.getElementsByClassName("slide");
-        if (slides.length > 0) {
-        showSlides(slideIndex);
-        startAutoSlideshow();
-        }
-        };
-        // Auto slideshow timer
-        let slideshowTimer;
+    <script src="js/TrangChu.js"></script>
 
-        function startAutoSlideshow() {
-        // Clear timer
-        clearInterval(slideshowTimer);
-        // Set timer 5000ms
-        slideshowTimer = setInterval(function() {
-        plusSlides(1);
-        }, 5000);
-        }
-        // Tien va Lui slideshow
-        function plusSlides(n) {
-        let newIndex = slideIndex + n;
-        // Vong nguoc lai
-        if (newIndex >= slides.length) {
-        newIndex = 0;
-        } else if (newIndex < 0) {
-        newIndex = slides.length - 1;
-        }
-        showSlides(newIndex);
-        // Chay lai auto
-        startAutoSlideshow();
-        }
-        function showSlides(n) {
-        slideIndex = n;
-        if (!slides || slides.length === 0) return;
-        for (let i = 0; i < slides.length; i++) {
-        slides[i].classList.remove('active');
-        }
-        slides[slideIndex].classList.add('active');
-        }
-    </script>
     <footer>
         <p>Địa chỉ: 1025A Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
         <p>Số điện thoại: 0888888888</p>
