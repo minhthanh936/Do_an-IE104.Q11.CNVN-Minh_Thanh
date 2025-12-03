@@ -679,4 +679,9 @@ footer {
         width: 560px;
         height: 315px;
     }
+
+    .comments-section {
+        margin: 20px;
+        padding: 15px;
+    }
 }
