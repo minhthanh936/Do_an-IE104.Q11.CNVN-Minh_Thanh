@@ -49,6 +49,20 @@
             <img src="images/10000000000003C00000027D80995D09.jpg" class="slide-image" alt="Các hình còn lại">
             <img src="images/1000000100000280000001A73E8951AD.gif" class="slide-image" alt="Các hình còn lại">
         </section>
+        <section class="article-place">
+            <h2>Nhận xét của người dùng:</h2>
+            <!-- Comment Form -->
+            <form id="comment-form">
+                <input type="text" id="author" placeholder="Tên" required>
+                <textarea id="comment-text" rows="5" placeholder="Bạn nghĩ trải nghiệm của mình như thế nào..." required></textarea>
+                <button type="submit">Đăng</button>
+            </form>
+            <!-- Comments List -->
+            <div id="comments-list">
+                <!-- Comments will be injected here by JavaScript -->
+                <p id="no-comments-message">Chưa có gì ở đây.</p>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Địa chỉ: 1025A Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
@@ -56,5 +70,6 @@
         <p>&copy; Công ty TNHH Generic Logistit</p>
         <a href="https://www.camau.gov.vn">Tham khảo từ</a>
     </footer>
+    <script src="js/Comments.js"></script>
 </body>
 </html>
