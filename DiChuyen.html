@@ -41,7 +41,7 @@
             <h2>Xe Hảo</h2>
             <p>Xe khách Hảo - Xe Hảo dịch vụ vận chuyển hành khách , hàng hoá từ: TP.HỒ CHÍ MINH - BẠC LIÊU. TP.HỒ CHÍ MINH - CÀ MAU.</p>
             <p><strong>Chạy tuyến:</strong> TP.HỒ CHÍ MINH - BẠC LIÊU, TP.HỒ CHÍ MINH - CÀ MAU </p>
-            <p><strong>SĐT:</strong> (Trước kia đi mà quên chưa ghi SĐT)</p>
+            <p><strong>SĐT:</strong> 0888888888</p>
             <a href="https://xekhachhao.com/" target="_blank" class="cta-button">Tìm hiểu ngay</a>
         </div>
 
@@ -53,64 +53,49 @@
         </div>
 
         <div id="d3" class="LonAd content-section">
-            <h2>(Cái phần này hết ý tưởng rồi)</h2>
-            <a href="BanDo.html" target="_blank" class="cta-button">Nhấn</a>
-            <section class="article-place">
-            <h1 class="bai-tho">HOA TRẮNG</h1>
-            <p class="bai-tho">&nbsp;</p>
-            <p class="bai-tho">Giâu gia hoa nở bao giờ</p>
-            <p class="bai-tho">Sớm nay bỗng thấy bất ngờ hương hay</p>
-            <p class="bai-tho">Bấy giờ mới ngước lên cây</p>
-            <p class="bai-tho">Từng chùm hoa nhỏ thơ ngây dịu dàng</p>
-            <p class="bai-tho">Mới đầu hoa lấm tấm vàng</p>
-            <p class="bai-tho">Đến khi trắng muốt là tàn mất hoa</p>
-            <p class="bai-tho">Có gì muốn nói với ta</p>
-            <p class="bai-tho">Nhưng chưa nói được thì hoa lìa cành</p>
-            <p class="bai-tho">&nbsp;</p>
-            <p class="bai-tho">Bước đi chậm nhẹ chứ anh</p>
-            <p class="bai-tho">Vùng than đen, trắng những nhành hoa rơi&hellip;</p>
-            <p class="bai-tho">&nbsp;</p>
-            <p align="right"><span>Bồ Hòn (Chắc chắn không phải ở Cà Mau), 2-1970 </span></p>
-            <p align="right">TRẦN NHUẬN MINH</p>
-            </section>
+            <h2>Xe Ôm Generic Logistit</h2>
+            <p>Dịch vụ vận chuyển hành khách và giao hàng siêu tốc trong và ngoài TP.CÀ MAU.</p>
+            <p><strong>Khu vực hoạt động</strong>: Tỉnh Cà Mau và Kiên Giang</p>
+            <p>Đặt xe: 0888888888</p>
+            <a href="DichVu.html" target="_blank" class="cta-button">Tìm hiểu ngay</a>
         </div>
 
     </main>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tabButtons = document.querySelectorAll('.tab-button');
-            const tabContents = document.querySelectorAll('.LonAd');
-            // Doi tab
-            function switchTab(targetTabId) {
-                tabButtons.forEach(button => {
-                    button.classList.remove('active');
-                });
-                tabContents.forEach(content => {
-                    content.classList.remove('active');
-                });
-                const activeTabButton = document.querySelector(`.tab-button[data-tab="${targetTabId}"]`);
-                if (activeTabButton) {
-                    activeTabButton.classList.add('active');
-                }
-                const activeTabContent = document.getElementById(targetTabId);
-                if (activeTabContent) {
-                    activeTabContent.classList.add('active');
-                }
-            }
-            // Nut
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const targetTabId = button.getAttribute('data-tab');
-                    switchTab(targetTabId);
-                });
-            });
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.LonAd');
+        // Doi tab
+        function switchTab(targetTabId) {
+        tabButtons.forEach(button => {
+        button.classList.remove('active');
+        });
+        tabContents.forEach(content => {
+        content.classList.remove('active');
+        });
+        const activeTabButton = document.querySelector(`.tab-button[data-tab="${targetTabId}"]`);
+        if (activeTabButton) {
+        activeTabButton.classList.add('active');
+        }
+        const activeTabContent = document.getElementById(targetTabId);
+        if (activeTabContent) {
+        activeTabContent.classList.add('active');
+        }
+        }
+        // Nut
+        tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+        const targetTabId = button.getAttribute('data-tab');
+        switchTab(targetTabId);
+        });
+        });
         });
     </script>
-<footer>
-    <p>Địa chỉ: ?? Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
-    <p>Số điện thoại: (Cứ tưởng tượng đây là Số điện thoại)</p>
-    <p>&copy; ???/???/???</p>
-    <a href="https://www.camau.gov.vn">Tham khảo từ</a>
-</footer>
+    <footer>
+        <p>Địa chỉ: 1025A Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
+        <p>Số điện thoại: 0888888888</p>
+        <p>&copy; Công ty TNHH Generic Logistit</p>
+        <a href="https://www.camau.gov.vn">Tham khảo từ</a>
+    </footer>
 </body>
 </html>
