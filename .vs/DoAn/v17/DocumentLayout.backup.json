@@ -3,20 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BaiBao.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaiBao.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\script.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:script.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BanDo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BanDo.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiaDiem.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DiaDiem.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\TrangChu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrangChu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\TrangChu.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\TrangChu.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Comments.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\Comments.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Button_Top.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\Button_Top.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DiChuyen.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\DiChuyen.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BaiBao.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:BaiBao.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\NoiGiaSu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NoiGiaSu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiChuyen.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -27,12 +51,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DichVu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\NoiGiaSu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NoiGiaSu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DichVu.js||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\DichVu.js||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\TrangChu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TrangChu.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiaDiem.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DiaDiem.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +66,192 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "script.py",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\script.py",
+              "RelativeDocumentMoniker": "script.py",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\script.py",
+              "RelativeToolTip": "script.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMtSURBVDhPrZS9T1tnFMZ/1/cLGxy7BNuJIeCG2hIiSSWqRmmR8Fh16lhVVVTRIR34Ezo2kSqUqUJeKkHLEqlDWZAyUJZEoUNaoTatXEgsQykGFFyw8de997337RA5MeYqUx/pDOc55zx6znmlF/5PSCmVzjybzX4/NTV1U9f1TvoUKpWKrFard5aXl\u002B/u7e1Vu\u002BtaNzE9PU0ikeimX2J1dVUWi8UvVFWVKysr3xQKhXJn/YwgQKFQ6KZQVZVUKoWu64FsNhtNp9O3LMsKapo2u7Gxcdju8xVMJpPdFIry6jqGYeiTk5MDuq5/IqW0hBBfFwqFOkCgc6gNwzDORPuuqqqytLTE3Nycura2diEUCk2Yphlvz/o63Nzc7KbQNI10Os27N95n4vp7aAGFZv3Emp\u002Bf//tUX2fSxtjYWDdFzRL8lD9kv9qk2bTRA3AxrGoXh4b7A4FXi/oK\u002Bjm0\u002BpI8269xUKnz\u002BOk\u002BwrGJ9Rn6R\u002BNDI/F4vK/d53vDVCp1JioNwaONPfI7ZTzh4AmXaq2hNEQgGA6HQ\u002B1ZX0EA13VxUfjrucO9xwf8tl3m2qUoE6l\u002BzvfqCOEghCAWrV9d\u002Bu7mz17zjyee5w37rry1tQXAbkvnxycn7JZPEMLGdRyE4\u002BA6Np7r4CkKhvIcmuvQWh8n9uWsr8NMJkMmk6Ehezg4riGEg\u002BcINDwiQY1ISCca0nk7FeJasgpuE6x/wN75wNdhPp8HYGe3iWXZeEIw3K8xk20SVI\u002BR0gPpETWOGAwegGi8EHWPI691ODKYwAiAEA63sgbvXPiV8dgzrsQLXBnIM9RbRBH/gqiBWwc9eeQraNs2tm0z8obJ5YEgYVMlds5DkS54NggLPA9cQAZA6tBz1cUY/NZ35VKpBIAJfJ69TMWCRGQLWja4LVAioARBV8DMHGG\u002B\u002BSc9bz1dXFyc9RUcHR09lSuKgumVJLW6gtsC9xB6b4BUQD2/88P93a8ePLj3KJfLNc4ILiwsvPwIOvHZpx9uXzIHU9i/v3iAk1\u002BQfdelG5woP3x4u5jL5RrdM6\u002BFlPKc9Jy7srW9J2vrnrRK21LK\u002B1LKj2dmZlLtvv8AoKdgTW7XN1wAAAAASUVORK5CYII=",
+              "WhenOpened": "2026-04-20T09:17:52.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "DiChuyen.js",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DiChuyen.js",
+              "RelativeDocumentMoniker": "js\\DiChuyen.js",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DiChuyen.js",
+              "RelativeToolTip": "js\\DiChuyen.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T13:47:21.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Button_Top.js",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Button_Top.js",
+              "RelativeDocumentMoniker": "js\\Button_Top.js",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Button_Top.js",
+              "RelativeToolTip": "js\\Button_Top.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T13:38:03.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Comments.js",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Comments.js",
+              "RelativeDocumentMoniker": "js\\Comments.js",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\Comments.js",
+              "RelativeToolTip": "js\\Comments.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T12:09:33.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DichVu.js",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DichVu.js",
+              "RelativeDocumentMoniker": "js\\DichVu.js",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\DichVu.js",
+              "RelativeToolTip": "js\\DichVu.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T11:53:28.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrangChu.js",
+              "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\TrangChu.js",
+              "RelativeDocumentMoniker": "js\\TrangChu.js",
+              "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\js\\TrangChu.js",
+              "RelativeToolTip": "js\\TrangChu.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-03T11:50:24.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "BaiBao.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BaiBao.html",
               "RelativeDocumentMoniker": "BaiBao.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BaiBao.html",
               "RelativeToolTip": "BaiBao.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:05.509Z"
+              "WhenOpened": "2025-11-26T09:32:05.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "BanDo.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BanDo.html",
               "RelativeDocumentMoniker": "BanDo.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\BanDo.html",
               "RelativeToolTip": "BanDo.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:04.63Z"
+              "WhenOpened": "2025-11-26T09:32:04.63Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "DiaDiem.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiaDiem.html",
               "RelativeDocumentMoniker": "DiaDiem.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiaDiem.html",
               "RelativeToolTip": "DiaDiem.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:03.79Z"
+              "WhenOpened": "2025-11-26T09:32:03.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "DiChuyen.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiChuyen.html",
               "RelativeDocumentMoniker": "DiChuyen.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DiChuyen.html",
               "RelativeToolTip": "DiChuyen.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:03.026Z"
+              "WhenOpened": "2025-11-26T09:32:03.026Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "DichVu.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DichVu.html",
               "RelativeDocumentMoniker": "DichVu.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\DichVu.html",
               "RelativeToolTip": "DichVu.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAIoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:01.656Z"
+              "WhenOpened": "2025-11-26T09:32:01.656Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "NoiGiaSu.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\NoiGiaSu.html",
               "RelativeDocumentMoniker": "NoiGiaSu.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\NoiGiaSu.html",
               "RelativeToolTip": "NoiGiaSu.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAADgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:32:00.911Z"
+              "WhenOpened": "2025-11-26T09:32:00.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TrangChu.html",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\TrangChu.html",
               "RelativeDocumentMoniker": "TrangChu.html",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\TrangChu.html",
               "RelativeToolTip": "TrangChu.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAGMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-26T09:31:59.79Z"
+              "WhenOpened": "2025-11-26T09:31:59.79Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\style.css",
               "RelativeDocumentMoniker": "style.css",
               "ToolTip": "C:\\Users\\minht\\Documents\\Internet\u0026Web\\\u0110\u1ED3 \u00E1n\\DoAn\\style.css",
               "RelativeToolTip": "style.css",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAE0CAAAAAAAAAAAAAEQCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-26T09:31:57.891Z",
+              "WhenOpened": "2025-12-03T13:13:06.549Z",
               "EditorCaption": ""
             }
           ]
