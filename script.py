@@ -1,18 +1,28 @@
-from flask import Flask, render_template, send_from_directory
-import os
+from flask import Flask, render_template
 
-# We set static_folder to '.' so it looks in the current directory for CSS/JS
-app = Flask(__name__, template_folder='.', static_folder='.')
+app = Flask(__name__)
 
 @app.route('/')
-def home():
+def TrangChu():
     return render_template('TrangChu.html')
-
-# This extra route ensures that if a file isn't found, 
-# Flask tries to find it in your root directory
-@app.route('/<path:filename>')
-def send_static(filename):
-    return send_from_directory(app.static_folder, filename)
+@app.route('/DiaDiem')
+def DiaDiem():
+    return render_template('DiaDiem.html')
+@app.route('/DichVu')
+def DichVu():
+    return render_template('DichVu.html')
+@app.route('/BaiBao')
+def BaiBao():
+    return render_template('BaiBao.html')
+@app.route('/DiChuyen')
+def DiChuyen():
+    return render_template('DiChuyen.html')
+@app.route('/BanDo')
+def BanDo():
+    return render_template('BanDo.html')
+@app.route('/NoiGiaSu')
+def NoiGiaSu():
+    return render_template('NoiGiaSu.html')
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

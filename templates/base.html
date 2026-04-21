@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">DU LỊCH CÀ MAU</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a class="{{ 'active' if request.endpoint == 'TrangChu' }}" href="{{ url_for('TrangChu') }}">Trang chủ</a></li>
+                <li><a class="{{ 'active' if request.endpoint == 'DiaDiem' }}" href="{{ url_for('DiaDiem') }}">Địa điểm</a></li>
+                <li><a class="{{ 'active' if request.endpoint == 'DichVu' }}" href="{{ url_for('DichVu') }}">Dịch vụ</a></li>
+                <li><a class="{{ 'active' if request.endpoint == 'BaiBao' }}" href="{{ url_for('BaiBao') }}">Bài báo</a></li>
+                <li><a class="{{ 'active' if request.endpoint == 'DiChuyen' }}" href="{{ url_for('DiChuyen') }}">Di chuyển</a></li>
+                <li><a class="{{ 'active' if request.endpoint == 'BanDo' }}" href="{{ url_for('BanDo') }}">Bản đồ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Địa chỉ: 1025A Đường Tố Hữu, Khu đô thị Licogi, Phường An Xuyên, Tỉnh Cà Mau</p>
+        <p>Số điện thoại: 0888888888</p>
+        <p>&copy; Công ty TNHH Generic Logistit</p>
+        <a href="https://www.camau.gov.vn">Tham khảo từ</a>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" title="Go to top">↑</button>
+    <script src="{{ url_for('static', filename='js/Button_Top.js') }}"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

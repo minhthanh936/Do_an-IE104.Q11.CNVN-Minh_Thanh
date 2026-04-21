@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Trang bài viết địa danh - Trống!{% endblock %}
+
+{% block content %}
+<section class="article-place">
+    <h1 class="bai-tho">Nothing here, yet</h1>
+    <section class="article-place">
+        <h1 class="bai-tho">HOA TRẮNG</h1>
+        <p class="bai-tho">&nbsp;</p>
+        <p class="bai-tho">Giâu gia hoa nở bao giờ</p>
+        <p class="bai-tho">Sớm nay bỗng thấy bất ngờ hương hay</p>
+        <p class="bai-tho">Bấy giờ mới ngước lên cây</p>
+        <p class="bai-tho">Từng chùm hoa nhỏ thơ ngây dịu dàng</p>
+        <p class="bai-tho">Mới đầu hoa lấm tấm vàng</p>
+        <p class="bai-tho">Đến khi trắng muốt là tàn mất hoa</p>
+        <p class="bai-tho">Có gì muốn nói với ta</p>
+        <p class="bai-tho">Nhưng chưa nói được thì hoa lìa cành</p>
+        <p class="bai-tho">&nbsp;</p>
+        <p class="bai-tho">Bước đi chậm nhẹ chứ anh</p>
+        <p class="bai-tho">Vùng than đen, trắng những nhành hoa rơi&hellip;</p>
+        <p class="bai-tho">&nbsp;</p>
+        <p align="right"><span>Bồ Hòn (Chắc chắn không phải ở Cà Mau), 2-1970 </span></p>
+        <p align="right">TRẦN NHUẬN MINH</p>
+    </section>
+    <h2 class="bai-tho">Image!</h2>
+    <img src="static/images/10000000000002BC000001C2B59F257C.jpg" class="slide-image" alt="Các hình còn lại">
+    <img src="static/images/10000000000003C00000027D80995D09.jpg" class="slide-image" alt="Các hình còn lại">
+    <img src="static/images/1000000100000280000001A73E8951AD.gif" class="slide-image" alt="Các hình còn lại">
+</section>
+<section class="article-place">
+    <h2>Nhận xét của người dùng:</h2>
+    <!-- Comment Form -->
+    <form id="comment-form">
+        <input type="text" id="author" placeholder="Tên" required>
+        <textarea id="comment-text" rows="5" placeholder="Bạn nghĩ trải nghiệm của mình như thế nào..." required></textarea>
+        <button type="submit">Đăng</button>
+    </form>
+    <!-- Comments List -->
+    <div id="comments-list">
+        <!-- Comments will be injected here by JavaScript -->
+        <p id="no-comments-message">Chưa có gì ở đây.</p>
+    </div>
+</section>
+{% endblock %}
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/Comments.js') }}"></script>
+{% endblock %}
