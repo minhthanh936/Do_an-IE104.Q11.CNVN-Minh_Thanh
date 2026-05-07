@@ -1,54 +1,37 @@
-let STORAGE_KEY = 'TheComments';
 let commentForm = document.getElementById('comment-form');
 let commentsList = document.getElementById('comments-list');
 let noCommentsMessage = document.getElementById('no-comments-message');
 let messageBox = document.getElementById('message-box');
 
-/**
- * Message box.
- * @param {string} message - message.
- * @param {string} type - 'success' hoac 'error'.
- */
 function showMessage(message, type = 'success') {
+    // If messageBox doesn't exist in your HTML, alert as fallback
+    if (!messageBox) {
+        alert(message);
+        return;
+    }
     messageBox.textContent = message;
     messageBox.style.backgroundColor = type === 'success' ? '#28a745' : '#dc3545';
     messageBox.style.display = 'block';
-    
-    setTimeout(() => {
-        messageBox.style.display = 'none';
-    }, 3000);
+    setTimeout(() => { messageBox.style.display = 'none'; }, 3000);
 }
 
 /**
- * @returns {Array<Object>} - Array comment.
+ * Fetch comments from the Flask SQLAlchemy backend
  */
-function loadComments() {
+async function loadComments() {
     try {
-        let storedComments = localStorage.getItem(STORAGE_KEY);
-        return storedComments ? JSON.parse(storedComments) : [];
+        let response = await fetch('/get_comments');
+        let comments = await response.json();
+        renderComments(comments);
     } catch (e) {
-        console.error("Error loading comments from localStorage:", e);
-        return [];
+        console.error("Error loading comments:", e);
     }
 }
 
 /**
- * @param {Array<Object>} comments - Array comment.
- */
-function saveComments(comments) {
-    try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(comments));
-    } catch (e) {
-        console.error("Error saving comments to localStorage:", e);
-        showMessage("Could not save comment. Local storage is full or unavailable.", 'error');
-    }
-}
-
-/**
- * @param {Array<Object>} comments - Array comment.
+ * Render the fetched comments
  */
 function renderComments(comments) {
-    // Xoa comments
     commentsList.innerHTML = ''; 
 
     if (comments.length === 0) {
@@ -59,13 +42,11 @@ function renderComments(comments) {
 
     noCommentsMessage.style.display = 'none';
 
-    // Thu tu tu moi den cu
-    let sortedComments = [...comments].sort((a, b) => b.timestamp - a.timestamp);
-
-    sortedComments.forEach(comment => {
+    comments.forEach(comment => {
         let commentItem = document.createElement('div');
         commentItem.className = 'comment-item';
         
+        // Format the ISO string from Python to local string
         let date = new Date(comment.timestamp).toLocaleString();
 
         commentItem.innerHTML = `
@@ -80,10 +61,9 @@ function renderComments(comments) {
 }
 
 /**
- * Form Submit.
- * @param {Event} event - Su kien form Submit.
+ * Submit to Flask API
  */
-function handleCommentSubmit(event) {
+async function handleCommentSubmit(event) {
     event.preventDefault();
 
     let authorInput = document.getElementById('author');
@@ -91,8 +71,7 @@ function handleCommentSubmit(event) {
 
     let newComment = {
         author: authorInput.value.trim() || 'Anonymous',
-        text: textInput.value.trim(),
-        timestamp: Date.now()
+        text: textInput.value.trim()
     };
 
     if (newComment.text.length === 0) {
@@ -100,25 +79,28 @@ function handleCommentSubmit(event) {
         return;
     }
 
-    let comments = loadComments();
-    comments.push(newComment);
-    
-    saveComments(comments);
-    renderComments(comments);
+    try {
+        let response = await fetch('/add_comment', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newComment)
+        });
 
-    // Xoa comment da dua len
-    authorInput.value = '';
-    textInput.value = '';
-    
-    showMessage("Comment posted successfully!");
+        if (response.ok) {
+            authorInput.value = '';
+            textInput.value = '';
+            showMessage("Comment posted successfully!");
+            loadComments(); // Refresh list
+        } else {
+            showMessage("Failed to post comment.", 'error');
+        }
+    } catch (e) {
+        console.error("Error saving comment:", e);
+        showMessage("Server error. Please try again.", 'error');
+    }
 }
 
-// DOM
 document.addEventListener('DOMContentLoaded', () => {
-    // Tai comment da luu
-    let initialComments = loadComments();
-    renderComments(initialComments);
-
-    // Submit handler tren form
+    loadComments();
     commentForm.addEventListener('submit', handleCommentSubmit);
 });

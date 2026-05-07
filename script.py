@@ -1,6 +1,51 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+# --- Database Model ---
+class Comment(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    author = db.Column(db.String(100), nullable=False, default='Anonymous')
+    text = db.Column(db.Text, nullable=False)
+    timestamp = db.Column(db.DateTime, default=datetime.utcnow)
+
+# Create the database
+with app.app_context():
+    db.create_all()
+
+# --- Routes ---
+@app.route('/get_comments')
+def get_comments():
+    comments = Comment.query.order_by(Comment.timestamp.desc()).all()
+    return jsonify([{
+        'author': c.author,
+        'text': c.text,
+        'timestamp': c.timestamp.isoformat()
+    } for c in comments])
+
+@app.route('/add_comment', methods=['POST'])
+def add_comment():
+    data = request.get_json()
+    
+    if not data or not data.get('text'):
+        return jsonify({'error': 'Comment text is required'}), 400
+        
+    new_comment = Comment(
+        author=data.get('author', 'Anonymous'),
+        text=data.get('text')
+    )
+    
+    db.session.add(new_comment)
+    db.session.commit()
+    
+    return jsonify({'message': 'Comment posted successfully!'}), 201
 
 @app.route('/')
 def TrangChu():
